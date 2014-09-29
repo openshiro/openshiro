@@ -10,7 +10,7 @@ class OpentokClient
   # end
 
   def self.generate
-    OpenTok::OpenTok.new 22329432, "f03a315fc996dff095d697eb7949cbec1474c6ba"
+    OpenTok::OpenTok.new 45008462, "5bd8a6d44a352395959e909e565ed689c2fc0f4f"
   end
 
 end
