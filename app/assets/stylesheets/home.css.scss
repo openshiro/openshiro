@@ -18,10 +18,10 @@ section.home-splash {
   background-size: cover;
 }
 
-section.how-it-works .wrapper .row .columns {
+section.how-it-works .wrapper .columns {
   padding: 3rem auto;
   width: 100%;
-  margin: 1rem auto 2rem;
+  margin: 4rem auto;
   > ul li {
     list-style-type: none;
     float: left;
@@ -31,5 +31,6 @@ section.how-it-works .wrapper .row .columns {
     font-weight: normal;
     line-height: 1.6em;
     font-size: 16px;
+    padding: 0 0.5rem;
   }
 }
