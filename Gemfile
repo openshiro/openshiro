@@ -4,6 +4,7 @@ ruby '2.1.1'
 gem 'zurb-foundation'
 gem 'pg'
 gem 'compass-rails'
+gem 'foundation-icons-sass-rails'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
