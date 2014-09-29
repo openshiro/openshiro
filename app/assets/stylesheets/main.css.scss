@@ -1,0 +1,22 @@
+#footer {
+  padding-top: 1rem;
+  background-color: #555;
+  > div ul {
+      li {
+        display: inline-block;
+        list-style-type: none;
+        text-align: left;
+        text-transform: uppercase;
+        line-height: 1.3em;
+        font-size: 16px;
+        padding-right: 1em;
+        a {
+          color: #fff;
+        }
+      }
+  }
+  > div p {
+    color: #fff;
+    padding-top: 1rem;
+  }
+}
