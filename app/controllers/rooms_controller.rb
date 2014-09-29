@@ -1,9 +1,13 @@
 class RoomsController < ApplicationController
-  before_filter :config_opentok,:except => [:index]
+  before_filter :config_opentok, :except => [:index]
 
   def index
     @rooms = Room.all
     @new_room = Room.new
+  end
+
+  def new
+    @room = Room.new
   end
 
   def create
@@ -29,7 +33,7 @@ class RoomsController < ApplicationController
 
   def config_opentok
     if @opentok.nil?
-      @opentok = OpenTok::OpenTokSDK.new 22329432, "f03a315fc996dff095d697eb7949cbec1474c6ba"
+      @opentok = OpentokClient.generate
     end
   end
 end
