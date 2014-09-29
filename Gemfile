@@ -5,6 +5,8 @@ gem 'zurb-foundation'
 gem 'pg'
 gem 'compass-rails'
 gem 'foundation-icons-sass-rails'
+gem 'rspec-rails'
+gem 'simplecov'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 gem 'rails', '4.1.6'
