@@ -22,28 +22,28 @@
   </head>
 
   <body>
-    <nav class="top-bar">
-      <ul class="title-area">
-        <li class="name">
-          <h1><%= link_to "OpenShiro", root_path %></h1>
-        </li>
-        <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
-      </ul>
-      <section class="top-bar-section">
-        <ul class="right">
-          <li class="divider"></li>
-          <li><%= link_to "Become an Expert", root_path %></li>
-          <li class="divider"></li>
-          <li><%= link_to "How it Works" %></li>
-          <li class="divider"></li>
-          <li><%= link_to "Sign in" %></li>
-          <li class="divider"></li>
-          <li><%= link_to "Sign up" %></li>
+      <nav class="top-bar">
+        <ul class="title-area">
+          <li class="name">
+            <h1><%= link_to "OpenShiro", root_path %></h1>
+          </li>
+          <li class="toggle-topbar menu-icon"><a href="#"><span>menu</span></a></li>
         </ul>
-      </section>
-    </nav>
+        <section class="top-bar-section">
+          <ul class="right">
+            <li class="divider"></li>
+            <li><%= link_to "Become an Expert", root_path %></li>
+            <li class="divider"></li>
+            <li><%= link_to "How it Works" %></li>
+            <li class="divider"></li>
+            <li><%= link_to "Sign in" %></li>
+            <li class="divider"></li>
+            <li><%= link_to "Sign up" %></li>
+          </ul>
+        </section>
+      </nav>
 
-    <%= yield %>
+      <%= yield %>
 
 
     <%= javascript_include_tag "application" %>
