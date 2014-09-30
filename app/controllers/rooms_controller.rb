@@ -16,7 +16,7 @@ class RoomsController < ApplicationController
     @new_room = Room.new(room_params)
     respond_to do |format|
       if @new_room.save
-        format.html { redirect_to("/party/"+@new_room.id.to_s) }
+        format.html { redirect_to("/connection/"+@new_room.id.to_s) }
       else
         format.html { render :controller => 'rooms',
   :action => "index" }
@@ -24,7 +24,7 @@ class RoomsController < ApplicationController
     end
   end
 
-  def party
+  def connection
     @room = Room.find(params[:id])
     @tok_token = @opentok.generate_token(@room.sessionID)
   end

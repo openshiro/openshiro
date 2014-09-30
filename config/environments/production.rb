@@ -78,8 +78,4 @@ Openshiro::Application.configure do
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
 
-  #http basic site wide authentication
-  config.middleware.insert_before(Rack::Runtime, "::Rack::Auth::Basic", "Staging") do |u, p|
-    [u, p] == ['vermont', 'vermont']
-  end
 end
