@@ -22,6 +22,7 @@
   </head>
 
   <body>
+    <div id="root">
       <nav class="top-bar">
         <ul class="title-area">
           <li class="name">
@@ -44,7 +45,8 @@
       </nav>
 
       <%= yield %>
-
+      <div id="root_footer"></div>
+    </div>
 
     <%= javascript_include_tag "application" %>
 
