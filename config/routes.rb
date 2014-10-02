@@ -1,12 +1,15 @@
 Openshiro::Application.routes.draw do
   resources :rooms
   match '/connection/:id', :to => "rooms#connection", :as => :connection, :via => :get
+  match "/connect", :to => "home#connect", :as => :connect, :via => :get
+
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
   # You can have the root of your site routed with "root"
-  root 'home#index'
+  root to: redirect('/connect')
+
 
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
