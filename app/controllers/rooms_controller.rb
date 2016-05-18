@@ -1,46 +1,5 @@
 class RoomsController < ApplicationController
-  before_filter :config_opentok, :except => [:index]
 
-  def index
-    @rooms = Room.all
-    @new_room = Room.new
-  end
-
-  def new
-    @room = Room.new
-  end
-
-  def create
-    session = @opentok.create_session
-    params[:room][:sessionID] = session.session_id
-    @new_room = Room.new(room_params)
-    respond_to do |format|
-      if @new_room.save
-        format.html { redirect_to("/connection/"+@new_room.id.to_s) }
-      else
-        format.html { render :controller => 'rooms',
-  :action => "index" }
-      end
-    end
-  end
-
-  def connection
-    @room = Room.find(params[:id])
-    @tok_token = @opentok.generate_token(@room.sessionID)
-  end
-
-  private
-
-  def config_opentok
-    if @opentok.nil?
-      @opentok = OpentokClient.generate
-    end
-  end
-
-  def room_params
-    params.require(:room).permit(:name, :sessionID)
-  end
-end
 
 # class RoomsController < ApplicationController
 #   before_action :set_room, only: [:show, :edit, :update, :destroy]
