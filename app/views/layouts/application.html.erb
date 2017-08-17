@@ -13,10 +13,18 @@
 
   	<!-- Set the viewport width to device width for mobile -->
   	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
-  	<title><%= content_for?(:title) ? yield(:title) : "OpenShiro" %></title>
 
-  	<%= stylesheet_link_tag    "application" %>
+  	<title><%= content_for?(:title) ? yield(:title) : "Duncan J. Miller - Entrepreneur, Web Developer, Investor - OpenShiro LLC" %></title>
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+
+    <meta name="theme-color" content="#ffffff">  	<%= stylesheet_link_tag    "application" %>
   	<%= javascript_include_tag "vendor/custom.modernizr" %>
     <%= csrf_meta_tags %>
   </head>
