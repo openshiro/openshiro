@@ -3,7 +3,9 @@ section.home-splash {
     overflow: hidden;
     & > section {
       h2, p {
-      color: #fff;
+        background-color: rgba(100,100,100,.7);
+        color: #fff;
+        display: inline;
       }
       display: block;
       font-size: 1.5rem;
