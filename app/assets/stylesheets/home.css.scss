@@ -2,6 +2,12 @@ section.home-splash {
   & > section {
     overflow: hidden;
     & > section {
+      h2, p {
+        color: #fff;
+      }
+      p {
+        background-color: rgba(100,100,100,.7);
+      }
       display: block;
       font-size: 1.5rem;
       padding: 8rem 4rem 8rem 4rem;
@@ -10,18 +16,10 @@ section.home-splash {
       margin-right: auto;
       overflow: hidden;
       text-align: center;
-      section.highlight {
-        background-color: rgba(100,100,100,.7);
-        padding: 2rem;
-        h2, p {
-          color: #fff;
-        }
-      }
     }
   }
   background: url('/assets/frontpage-splash.jpg') center;
   background-size: cover;
-
 }
 
 section.how-it-works .wrapper .columns {
